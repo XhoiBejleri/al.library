@@ -1,5 +1,6 @@
 package al.library.library.controller;
 
+import al.library.library.model.Book;
 import al.library.library.service.BookService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -33,7 +34,7 @@ public class BookController {
     }
 
     @PostMapping
-    public ResponseEntity<Object> createBook(@RequestBody al.library.library.model.Book book) {
+    public ResponseEntity<Object> createBook(@RequestBody Book book) {
         al.library.library.model.Book result = service.createBook(book);
         URI location = ServletUriComponentsBuilder
                 .fromCurrentRequest()

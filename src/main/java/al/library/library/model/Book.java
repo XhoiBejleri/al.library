@@ -48,9 +48,13 @@ public class Book {
     }
 
     // Author class
-    public class Author {
+    public static class Author {
         private String name;
         private String nationality;
+
+        public Author() {
+
+        }
 
     // Constructor
         public Author(String name, String nationality) {
