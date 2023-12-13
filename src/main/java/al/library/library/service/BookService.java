@@ -14,11 +14,11 @@ public class BookService {
         this.repository = repository;
     }
 
-    public al.library.library.model.Book getBookById(Long id) {
+    public Book getBookById(Long id) {
         return repository.getById(id);
     }
 
-    public al.library.library.model.Book createBook(al.library.library.model.Book book) {
+    public al.library.library.model.Book createBook(Book book) {
         return repository.createBook(book);
     }
 
